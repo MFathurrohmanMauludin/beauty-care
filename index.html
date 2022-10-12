@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Care | Save Your Beauty With Natural Cosmetic</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <a href="#">
+                <img src="assets/icons/company-logo.png" alt="logo" width="200vw">
+            </a>
+        </div>
+
+        <!-- navigation -->
+        <nav>
+            <!-- top navigation -->
+            <ul class="text-capitalize" id="nav-top">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#product">product</a></li>
+                <li><a href="#reviews">reviews</a></li>
+                <li><a href="#partners">partners</a></li>
+                <li><a href="#my-profile">my profile</a></li>
+                <li>
+                    <div class="flx-center">
+                        <a href="#">
+                            <img src="assets/icons/cart.svg" alt="cart" width="25">
+                            <span class="cart">0</span>
+                        </a>
+                    </div>
+                </li>
+                <li id="show-btn-profile">
+                    <div class="flx-center">
+                        <a href="#my-profile">
+                            <img src="assets/icons/people.svg" alt="profile" width="25">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- bottom navigation -->
+            <ul class="text-capitalize" id="nav-bottom">
+                <li>
+                    <a href="#">
+                        <div class="flx-column-center">
+                            <img src="assets/icons/home.svg" alt="home" width="25">
+                            <span>Home</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#product">
+                        <div class="flx-column-center">
+                            <img src="assets/icons/product.svg" alt="product" width="25">
+                            <span>Product</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#reviews">
+                        <div class="flx-column-center">
+                            <img src="assets/icons/reviews.svg" alt="reviews" width="25">
+                            <span>Reviews</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#partners">
+                        <div class="flx-column-center">
+                            <img src="assets/icons/partners.svg" alt="partner" width="25">
+                            <span>Partner</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="content">
+
+        <!-- hero section -->
+        <section class="hero">
+            <div class="item-left">
+                <h1>Feel Comfortable in Flawless Skin</h1>
+                <p>Get bright and smooth skin with natural ingredients from nature. The
+                    products we provide are of high
+                    quality and have been used by famous artists.</p>
+                <a href="#product" class="btn-started lh-10">Let's Started</a>
+                <div class="advantage">
+                    <div class="advantage-icon">
+                        <img src="assets/icons/leaf.svg" alt="" width="40">
+                        <span class="green-color">100% <b>Natural</b></span>
+                    </div>
+                    <div class="advantage-icon">
+                        <img src="assets/icons/star-people.svg" alt="" width="40">
+                        <span class="orange-color">80% <b>used by artist</b></span>
+                    </div>
+                    <div class="advantage-icon">
+                        <img src="assets/icons/radio-active.svg" alt="" width="40">
+                        <span class="red-color">0% <b>Mercury</b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="item-right">
+                <img src="assets/img/beauty-woman.png" alt="banner">
+            </div>
+        </section>
+
+        <!-- article -->
+        <article>
+            <!-- left content -->
+            <div class="left-content flx-column-center" id="product">
+
+                <!-- category section -->
+                <section class="category-product text-center ml-minus-60">
+                    <div class="btn-left" id="hide-btn" onclick="leftScroll()"><img src="assets/icons/arrow-left.svg"
+                            alt="left" width="20">
+                    </div>
+                    <div class="scroll-horizontal-menu">
+                        <div class="flx-row">
+                            <div class="card btn-active">
+                                <a href="#">All</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">popular</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">recomendation</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">hand</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">body</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">face</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">legs</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">nail</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">hair</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">eyebrow</a>
+                            </div>
+                            <div class="card">
+                                <a href="#">eyelashes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-right" onclick="rightScroll()"><img src="assets/icons/arrow-right.svg" alt="right"
+                            width="20"></div>
+                </section>
+
+                <!-- product section -->
+                <section class="product wrap-content mt-2">
+                    <!-- product 1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <div class="space-between text-uppercase mb-0-5">
+                                    <!-- title product & button add to cart -->
+                                    <a href="#" class="w-275 fw-700">HAND CREAM LINE FRIEND</a>
+                                    <div class="add-cart" onclick="clickAddToCart1()" status="add-product"
+                                        id="addtocart-1">add to cart</div>
+                                </div>
+                                <!-- location & category -->
+                                <div class="space-between mb-0-5">
+                                    <div class="location-item">
+                                        <img src="assets/icons/location.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="sky-color">South Korea</span>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="assets/icons/hand.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="grey-color">Hand</span>
+                                    </div>
+                                </div>
+                                <!-- image product -->
+                                <img src="assets/img/product1.jpeg" alt="cosmetic">
+                            </div>
+                            <div class="card-content mt-1">
+                                <!-- rating & like product -->
+                                <div class="space-between">
+                                    <div class="flx-start text-capitalize">
+                                        <div class="rating-item">
+                                            <img src="assets/icons/star-rating-solid.svg" class="mr-0-3" alt="rating"
+                                                width="20">
+                                            <span class="orange-color">4120</span>
+                                        </div>
+                                        <div class="likes-item">
+                                            <img src="assets/icons/love.svg" class="mr-0-3" alt="location" width="20"
+                                                id="like-1" onclick="myLike1()">
+                                            <span class="red-color" id="count-1">924</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- price product -->
+                                <div class="price-item">
+                                    <span class="mr-0-3">$8</span>
+                                    <span class="green-color fs-medium">Available</span>
+                                </div>
+                                <!-- description product -->
+                                <div class="description-item">
+                                    <p class="fs-small">Missha's collaboration hand cream with LINE Friends has 5
+                                        variants, each of which is packaged with super cute packaging and a different
+                                        aroma.<span id="dots1">...</span><span id="more1">&nbsp;Its light texture does
+                                            not feel sticky when applied to the surface of your hands. The ability to
+                                            moisturize the skin is also quite good.</span></p>
+                                    <h4 class="fs-small text-uppercase" onclick="showMoreOrLess1()" id="btn-show1">
+                                        show
+                                        more</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 2 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <!-- title product & button add to cart -->
+                                <div class="space-between text-uppercase mb-0-5">
+                                    <a href="#" class="w-275 fw-700">Magic Soap Cherry Blossom</a>
+                                    <div class="add-cart" onclick="clickAddToCart2()" id="addtocart-2">add to cart</div>
+                                </div>
+                                <!-- location & category -->
+                                <div class="space-between mb-0-5">
+                                    <div class="location-item">
+                                        <img src="assets/icons/location.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="sky-color">Japan</span>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="assets/icons/body.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="grey-color">Body</span>
+                                    </div>
+                                </div>
+                                <!-- image product -->
+                                <img src="assets/img/product2.jpg" alt="cosmetic">
+                            </div>
+                            <div class="card-content mt-1">
+                                <!-- rating & like product -->
+                                <div class="space-between">
+                                    <div class="flx-start text-capitalize">
+                                        <div class="rating-item">
+                                            <img src="assets/icons/star-rating-solid.svg" class="mr-0-3" alt="rating"
+                                                width="20">
+                                            <span class="orange-color">2530</span>
+                                        </div>
+                                        <div class="likes-item">
+                                            <img src="assets/icons/love.svg" class="mr-0-3" alt="location" width="20"
+                                                id="like-2" onclick="myLike2()">
+                                            <span class="red-color" id="count-2">735</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- price product -->
+                                <div class="price-item">
+                                    <span class="mr-0-3 grey-color">$52 </span>
+                                    <span class="mr-0-3">$45 </span>
+                                    <span class="green-color fs-medium">Available</span>
+                                </div>
+                                <!-- description product -->
+                                <div class="description-item">
+                                    <p class="fs-small">Dr. Bronner's Pure-Castile Soap is made from organic plant oils
+                                        that are good for skin health such as Organic Coconut Oil, Organic Palm Kernel
+                                        Oil,<span id="dots2">...</span><span id="more2">&nbsp;Organic Palm Kernel Oil,
+                                            Organic Olive Oil, and Organic Jojoba Oil. Meanwhile, the original fragrance
+                                            is from Organic Essential Oil.</span></p>
+                                    <h4 class="fs-small text-uppercase" onclick="showMoreOrLess2()" id="btn-show2">
+                                        show
+                                        more</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 3 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <!-- title product & button add to cart -->
+                                <div class="space-between text-uppercase mb-0-5">
+                                    <a href="#" class="w-275 fw-700">Club Suppin Powder Cherry Blossom Scent: Quickly
+                                        Brighten
+                                        Your Skin!</a>
+                                    <div class="disable-btn">add to cart</div>
+                                </div>
+                                <!-- location & category -->
+                                <div class="space-between mb-0-5">
+                                    <div class="location-item">
+                                        <img src="assets/icons/location.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="sky-color">Japan</span>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="assets/icons/mask.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="grey-color">Face</span>
+                                    </div>
+                                </div>
+                                <!-- image product -->
+                                <img src="assets/img/product3.jpg" alt="cosmetic">
+                            </div>
+                            <div class="card-content mt-1">
+                                <!-- rating & like product -->
+                                <div class="space-between">
+                                    <div class="flx-start text-capitalize">
+                                        <div class="rating-item">
+                                            <img src="assets/icons/star-rating-solid.svg" class="mr-0-3" alt="rating"
+                                                width="20">
+                                            <span class="orange-color">5120</span>
+                                        </div>
+                                        <div class="likes-item">
+                                            <img src="assets/icons/love.svg" class="mr-0-3" alt="location" width="20"
+                                                id="like-3" onclick="myLike3()">
+                                            <span class="red-color" id="count-3">1246</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- price product -->
+                                <div class="price-item">
+                                    <span class="mr-0-3">$30</span>
+                                    <span class="red-color fs-medium">Sold Out</span>
+                                </div>
+                                <!-- description product -->
+                                <div class="description-item">
+                                    <p class="fs-small">From the popular skincare powder, the scent of cherry blossom is
+                                        now available in limited quantities. The fine powder formulated with
+                                        moisturizing ingredients<span id="dots3">...</span><span
+                                            id="more3">&nbsp;conceals unevenness of color and pores and gives skin
+                                            transparency. One extra fluffy plush cherry color puff is included.</span>
+                                    </p>
+                                    <h4 class="fs-small text-uppercase" onclick="showMoreOrLess3()" id="btn-show3">
+                                        show
+                                        more</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 4 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <!-- title product & button add to cart -->
+                                <div class="space-between text-uppercase mb-0-5">
+                                    <a href="#" class="w-275 fw-700">Lily Beauty Varicose Veins Cream</a>
+                                    <div class="add-cart" onclick="clickAddToCart4()" id="addtocart-4">add to cart</div>
+                                </div>
+                                <!-- location & category -->
+                                <div class="space-between mb-0-5">
+                                    <div class="location-item">
+                                        <img src="assets/icons/location.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="sky-color">USA</span>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="assets/icons/leg.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="grey-color">Leg</span>
+                                    </div>
+                                </div>
+                                <!-- image product -->
+                                <img src="assets/img/product4.jpg" alt="cosmetic">
+                            </div>
+                            <div class="card-content mt-1">
+                                <!-- rating & like product -->
+                                <div class="space-between">
+                                    <div class="flx-start text-capitalize">
+                                        <div class="rating-item">
+                                            <img src="assets/icons/star-rating-solid.svg" class="mr-0-3" alt="rating"
+                                                width="20">
+                                            <span class="orange-color">723</span>
+                                        </div>
+                                        <div class="likes-item">
+                                            <img src="assets/icons/love.svg" class="mr-0-3" alt="location" width="20"
+                                                id="like-4" onclick="myLike4()">
+                                            <span class="red-color" id="count-4">369</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- price product -->
+                                <div class="price-item">
+                                    <span class="mr-0-3">$6</span>
+                                    <span class="green-color fs-medium">Available</span>
+                                </div>
+                                <!-- description product -->
+                                <div class="description-item">
+                                    <p class="fs-small">his cream can help you overcome the discomfort, health risks and
+                                        engorged appearance of varicose veins.<span id="dots4">...</span><span
+                                            id="more4">&nbsp;Helps diminish the appearance of varicose and spider veins.
+                                            blood circulation. Promotes smooth and natural-looking skin.</span></p>
+                                    <h4 class="fs-small text-uppercase" onclick="showMoreOrLess4()" id="btn-show4">
+                                        show
+                                        more</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 5 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-image">
+                                <!-- title product & button add to cart -->
+                                <div class="space-between text-uppercase mb-0-5">
+                                    <a href="#" class="w-275 fw-700">citra sakura fair uv</a>
+                                    <div class="add-cart" onclick="clickAddToCart5()" id="addtocart-5">add to cart</div>
+                                </div>
+                                <!-- location & category -->
+                                <div class="space-between mb-0-5">
+                                    <div class="location-item">
+                                        <img src="assets/icons/location.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="sky-color">Indonesian</span>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="assets/icons/mask.svg" class="mr-0-3" alt="location" width="20">
+                                        <span class="grey-color">Face</span>
+                                    </div>
+                                </div>
+                                <!-- image product -->
+                                <img src="assets/img/product5.jpg" alt="cosmetic">
+                            </div>
+                            <div class="card-content mt-1">
+                                <!-- rating & like product -->
+                                <div class="space-between">
+                                    <div class="flx-start text-capitalize">
+                                        <div class="rating-item">
+                                            <img src="assets/icons/star-rating-solid.svg" class="mr-0-3" alt="rating"
+                                                width="20">
+                                            <span class="orange-color">634</span>
+                                        </div>
+                                        <div class="likes-item">
+                                            <img src="assets/icons/love.svg" class="mr-0-3" alt="location" width="20"
+                                                id="like-5" onclick="myLike5()">
+                                            <span class="red-color" id="count-5">126</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- price product -->
+                                <div class="price-item">
+                                    <span class="mr-0-3">$9</span>
+                                    <span class="green-color fs-medium">Available</span>
+                                </div>
+                                <!-- description product -->
+                                <div class="description-item">
+                                    <p class="fs-small">Enriched with Sakura flower extract, Vitamin B3, B6, C & E,
+                                        Citra Sakura Fair UV Facial Moisturizer Powder Cream <span
+                                            id="dots5">...</span><span id="more5">&nbsp;can nourish deep into the skin
+                                            surface and make the face bright and rosy.</span></p>
+                                    <h4 class="fs-small text-uppercase" onclick="showMoreOrLess5()" id="btn-show5">
+                                        show
+                                        more</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <!-- right content -->
+        <div class="right-content flx-center" id="my-profile">
+            <!-- aside -->
+            <aside>
+                <!-- profile user -->
+                <div class="card flx-column-center">
+                    <span class="text-capitalize fs-x-large">your profile</span>
+                    <!-- image user -->
+                    <img class="photo-profile" src="assets/img/me.jpg" alt="photo">
+                    <!-- full name -->
+                    <span>M Fathurrohman Mauludin</span>
+                    <!-- email address & social media -->
+                    <span class="fs-small grey-color">fathurdiakfari@gmail.com</span>
+                    <div class="flx-center">
+                        <img src="assets/icons/instagram.svg" alt="instagram" width="20">
+                        <img src="assets/icons/facebook.svg" alt="facebook" width="20">
+                        <img src="assets/icons/telegram.svg" alt="telegram" width="20">
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- costumer reviews -->
+        <section class="reviews" id="reviews">
+            <span class="text-center fs-x-large text-uppercase mb-1">customer reviews</span>
+            <div class="scroll-horizontal-reviews">
+                <div class="d-webkit-inline-box">
+
+                    <!-- reviews 1 -->
+                    <div class="card">
+                        <div class="flx-start mb-1">
+                            <img src="assets/img/asuna-chan.jpg" class="user-photo" alt="user photo">
+                            <div class="flx-column w-full ml-1">
+                                <div class="space-between align-center">
+                                    <span class="text-capitalize">Asuna Yuuki</span>
+                                    <span class="fs-x-small">1 day ago</span>
+                                </div>
+                                <div class="rate-star">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="fs-small comment">
+                            the products offered are really great
+                        </span>
+                    </div>
+
+                    <!-- reviews 2 -->
+                    <div class="card">
+                        <div class="flx-start mb-1">
+                            <img src="assets/img/lena-chan.jpg" class="user-photo" alt="user photo">
+                            <div class="flx-column w-full ml-1">
+                                <div class="space-between align-center">
+                                    <span class="text-capitalize">Vladilena Milize</span>
+                                    <span class="fs-x-small">5 day ago</span>
+                                </div>
+                                <div class="rate-star">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="fs-small comment">
+                            beauty products with natural ingredients that are good for my skin who is 18 years old.
+                        </span>
+                    </div>
+
+                    <!-- reviews 3 -->
+                    <div class="card">
+                        <div class="flx-start mb-1">
+                            <img src="assets/img/miku-chan.jpg" class="user-photo" alt="user photo">
+                            <div class="flx-column w-full ml-1">
+                                <div class="space-between align-center">
+                                    <span class="text-capitalize">Hatsune Miku</span>
+                                    <span class="fs-x-small">1 mont ago</span>
+                                </div>
+                                <div class="rate-star">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="fs-small comment">
+                            fragrant, not sticky, and relaxed on the hands or feet.
+                        </span>
+                    </div>
+
+                    <!-- reviews 4 -->
+                    <div class="card">
+                        <div class="flx-start mb-1">
+                            <img src="assets/img/echidna-san.jpg" class="user-photo" alt="user photo">
+                            <div class="flx-column w-full ml-1">
+                                <div class="space-between align-center">
+                                    <span class="text-capitalize">echidna</span>
+                                    <span class="fs-x-small">2 Week ago</span>
+                                </div>
+                                <div class="rate-star">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                    <img src="assets/icons/star-rating-solid.svg" alt="star" width="15">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="fs-small comment">
+                            just a few weeks my skin became white and soft, the shop I recommend for ladies.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our partners -->
+        <section class="partners mb-5-vw" id="partners">
+            <span class="text-center mb-1 fs-x-large text-uppercase">our partners</span>
+            <div class="card partners-icon">
+                <img src="assets/icons/kao-logo.svg" alt="kao">
+                <img src="assets/icons/sulwhasoo.png" alt="sulwhasoo">
+                <img src="assets/icons/Laneige-logo.svg" alt="laneige">
+                <img src="assets/icons/dove-logo.svg" alt="laneige">
+                <img src="assets/icons/LOreal-logo.svg" alt="laneige">
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="content-footer">
+            <!-- logo -->
+            <ul>
+                <li class="flx-column-center">
+                    <img src="assets/icons/company-logo.png" alt="logo">
+                    <span class="lh-0 text-uppercase">beautiful is easy</span>
+                </li>
+            </ul>
+
+            <!-- about us -->
+            <ul>
+                <li class="text-uppercase">About Us</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Let's started</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+
+            <!-- product -->
+            <ul>
+                <li class="text-uppercase">Product</li>
+                <li><a href="#">Customer Reviews</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Member Discounts</a></li>
+            </ul>
+
+            <!-- social media -->
+            <ul>
+                <li class="text-uppercase">Follow Us</li>
+                <li class="social-media">
+                    <a href="#"><img src="assets/icons/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="assets/icons/facebook.svg" class="ml-1" alt="facebook"></a>
+                    <a href="#"><img src="assets/icons/twitter.svg" class="ml-1" alt="twitter"></a>
+                    <a href="#"><img src="assets/icons/linkedin.svg" class="ml-1" alt="linkedin"></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- copyright -->
+        <div class="copyright fs-small text-center">
+            Copyrigth &#169;
+            2022 - M
+            Fathurrohman Mauludin </div>
+    </footer>
+
+    <!-- javascripts/js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
